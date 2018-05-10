@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wongnok ค้นหาสถานที่ใกล้เคียงแบบง่ายๆ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-image: url('img/1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 50%;
+    }
+</style>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+        <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="js-scroll-trigger" href="index.html">Wongnok</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="index.html">หน้าหลัก</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="search.html">ค้นหา</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="about.html">เกี่ยวกับ</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="masthead d-flex">
+        <div class="container text-center">
+            <div class="display-3  mb-1 text-white ">
+                <h3>กำลังหาอะไรอยู่หรอ ?</h3>
+            </div>
+            <br>
+            <form>
+                <div class="col-12">
+                <div class="form-group text-white">
+                    <label for="">สิ่งที่ต้องการค้นหา</label>
+                    <input type="text" name="keyword" id="keyword" class="form-control" placeholder="ชื่อร้าน,ตำแหน่ง" aria-describedby="helpId">
+                </div>
+                <div class="form-group text-white">
+                    <label for="">ประเภท</label>
+                    <select class="form-control" name="type" id="type">
+                        <option value="resturant">ร้านอาหาร</option>
+                        <option value="doctor">คลินิค</option>
+                        <option value="beauty_salon">ความงาม</option>
+                        <option value="gas_station">ปั๊มน้ำมัน</option>
+                        <option value="atm">ATM</option>
+                    </select>
+                </div>
+                <div class="form-group text-white">
+                    <label for="">ระยะทาง</label>
+                    <select class="form-control" name="radius" id="radius">
+                        <option value="1000">1 กิโลเมตร</option>
+                        <option value="5000">5 กิโลเมตร</option>
+                        <option value="10000">10 กิโลเมตร</option>
+                    </select>
+                </div></div><br><br>
+                <a name="" id="search" class="btn btn-primary" href="#" role="button">ค้นหา</a>
+                <p></p><br><br><br><br>
+                <h4 class="text-white">ผลการค้นหา</h4><br><br>
+                <div id="searchresult"></div>
+            </form>
+        </div>
+    </header>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+    <script src="js/placesearch.js"></script>
+    <script src="js/search.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="js/placesearch.js"></script>
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>
